@@ -395,6 +395,12 @@ Melee spell attack. 5d6 necrotic dmg, I gain half dmg as heal.
 
 
 <div class="split2 right">
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Main')">London</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tress')">Paris</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+</div>
+<div id="Main" class="city">
 <h2>Pem's Spells</h2>
 <b>Spell Slots</b>: 2<br>
 <b>Slot Level</b>: 5th<br>
@@ -406,9 +412,10 @@ Melee spell attack. 5d6 necrotic dmg, I gain half dmg as heal.
   <input type="radio" id="female" name="0" value="female">
   <label for="female">1</label>
   <input type="radio" id="other" name="0" value="other" checked>
-  <label for="other">2</label></p>
+  <label for="other">2</label></p></form>
+</div>
+<div id="Tress" class="city">Test</div>
 
-</form>
 </div>
 
 
@@ -426,6 +433,15 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
 }
 </script>
 
