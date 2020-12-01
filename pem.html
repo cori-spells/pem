@@ -16,6 +16,20 @@
   padding-right: 20px;
   font-size: 18px;
 }
+
+.colla {
+  background-color: #d7b9d5;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  width: 30%;
+  border: 1px solid #dcdcdc;
+  text-align: left;
+  outline: 1px solid #dcdcdc;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
 .active, .collapsible:hover, .collapsible3:hover, .collapsible2:hover {
   background-color: #607287;
 }
@@ -395,9 +409,9 @@ Melee spell attack. 5d6 necrotic dmg, I gain half dmg as heal.
 
 
 <div class="split2 right">
-  <button type="button" class="collapsible" onclick="openCity('Main')">London</button>
-  <button type="button" class="collapsible" onclick="openCity('Tress')">Paris</button>
-  <button type="button" class="collapsible" onclick="openCity('Tokyo')">Tokyo</button>
+  <button type="button" class="colla" onclick="openCity('Main')">London</button>
+  <button type="button" class="colla" onclick="openCity('Tress')">Paris</button>
+  <button type="button" class="colla" onclick="openCity('Tokyo')">Tokyo</button>
 
 
 <div id="Main" class="city">
@@ -412,7 +426,7 @@ Melee spell attack. 5d6 necrotic dmg, I gain half dmg as heal.
   <input type="radio" id="female" name="0" value="female">
   <label for="female">1</label>
   <input type="radio" id="other" name="0" value="other" checked>
-  <label for="other">20</label></p></form>
+  <label for="other">2</label></p></form>
 </div>
 
 <div id="Tress" class="city" style="display:none">Test</div>
