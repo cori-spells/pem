@@ -18,7 +18,7 @@
 }
 
 .colla {
-  background-color: #5D6D7E;
+  background-color: #F4AC45;
   color: white;
   cursor: pointer;
   padding: 14px;
@@ -33,10 +33,10 @@
 .active, .collapsible:hover, .collapsible3:hover, .collapsible2:hover {
   background-color: #607287;}
 
-.collapsible-inv{background-color: #ada7c9;}
-.collapsible-ritual{background-color: #90a8c3;}
-.collapsible-spells{background-color: #64a6bd;}
-.collapsible-misc{background-color: #f4cae0;}
+.collapsible-prep{background-color: #BFAB25;}
+.collapsible-noprep{background-color:#9D5C63;}
+.collapsible-class{background-color: #0B032D;}
+
 
 .content {
   padding: 0 18px;
@@ -84,7 +84,7 @@
 
 .left {
   left: 0;
-  background-color: #DCDCDC;}
+  background-color: #D8E4FF;}
 
 .right {
   right: 0;
@@ -97,7 +97,7 @@
 <div class="split left"><div class="split3 left">
 <h3 style="color:#0a014f">1st Level:</h3>
 
-<button type="button" class="collapsible">Compelled Duel</button>
+<button type="button" class="collapsible collapsible-prep">Compelled Duel</button>
 <div class="content">
 <p>Casting Time: 1 Bonus Action<br>
 Range: 30 feet<br>
@@ -110,7 +110,7 @@ The spell ends if you attack any other creature, if you cast a spell that target
 <div class="source">Enchantment<BR></div> 
 </div>
 
-<button type="button" class="collapsible">Cure Wounds</button>
+<button type="button" class="collapsible collapsible-prep">Cure Wounds</button>
 <div class="content">
   <p>Casting Time: 1 action<BR>
 Range: Touch<BR>
@@ -122,7 +122,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 <div class="source">Evocation</div>
 </div>
 
-<button type="button" class="collapsible">Detect evil and good</button>
+<button type="button" class="collapsible collapsible-prep">Detect evil and good</button>
 <div class="content">
   <p>Casting time: 1 action <BR>
 Range: Self<BR>
@@ -133,7 +133,7 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 <div class="source">Divination</div>
 </div>
 
-<button type="button" class="collapsible">Divine Favor</button>
+<button type="button" class="collapsible collapsible-prep">Divine Favor</button>
 <div class="content">
   <p>Casting Time: 1 bonus action<br>
 Range: Self<br>
@@ -144,7 +144,7 @@ Your prayer empowers you with divine radiance. Until the spell ends, your weapon
 </div>
 
 
-<button type="button" class="collapsible">Sanctuary</button>
+<button type="button" class="collapsible collapsible-noprep">Sanctuary</button>
 <div class="content">
   <p>Casting Time: 1 bonus action<BR>
 Range: 30 feet<BR>
@@ -154,7 +154,7 @@ You ward a creature within range against attack. Until the spell ends, any creat
 If the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends.</p>
 <div class="source">Abjuration</div></div>
 
-<button type="button" class="collapsible">Sleep</button>
+<button type="button" class="collapsible collapsible-noprep">Sleep</button>
 <div class="content">
   <p>Casting Time: 1 action<BR>
 Range: 90ft<BR>
@@ -168,7 +168,7 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 
 <h3 style="color:#0a014f">2nd Level:</h3>
 
-<button type="button" class="collapsible collapsible-inv">Find Steed</button>
+<button type="button" class="collapsible collapsible-prep">Find Steed</button>
 <div class="content">
   <p>Casting Time: 10 minutes<BR>
 Range: 30 feet<BR>
@@ -180,17 +180,17 @@ When the steed drops to 0 hit points, it disappears, leaving behind no physical 
 While your steed is within 1 mile of you, you can communicate with it telepathically.<BR>
 You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.</p><div class="source">Conjuration</div></div>
 
-<button type="button" class="collapsible collapsible-inv">Lesser Restoration</button>
+<button type="button" class="collapsible collapsible-noprep">Calm Emotions</button>
 <div class="content">
   <p>Casting Time: 1 action<BR>
 Range: Touch<BR>
 Components: V, S<BR>
 Duration: Instantaneous<BR><BR>
-You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>
+</p>
 <div class="source">Abjuration</div></div>
 
 
-<button type="button" class="collapsible collapsible-inv">Locate Object</button>
+<button type="button" class="collapsible collapsible-prep">Locate Object</button>
 <div class="content">
   <p>Casting Time: 1 action<BR>
 Range: Self<BR>
@@ -203,7 +203,7 @@ This spell can't locate an object if any thickness of lead, even a thin sheet, b
 
 
 
-<button type="button" class="collapsible collapsible-inv">Magic Weapon</button>
+<button type="button" class="collapsible collapsible-prep">Magic Weapon</button>
 <div class="content">
   <p>Casting Time: 1 bonus action<BR>
 Range: Touch<BR>
@@ -214,19 +214,18 @@ You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic
 At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.</p>
 <div class="source">Abjuration</div></div>
 
-<button type="button" class="collapsible collapsible-inv">Zone of Truth</button>
+<button type="button" class="collapsible collapsible-prep">Hold Person</button>
 <div class="content">
   <p>Casting Time: 1 action<BR>
 Range: 60 feet<BR>
 Components: V, S<BR>
 Duration: 10 minutes<BR><BR>
-You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.<br>
-An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.</p>
+</p>
 <div class="source">Enchantment</div></div>
 
 
 <h3 style="color:#0a014f">Paladin Abilities:</h3>
-<button type="button" class="collapsible collapsible-inv">Lay on Hands</button>
+<button type="button" class="collapsible collapsible-class">Lay on Hands</button>
 <div class="content">
   <p>Casting Time: 1 action<BR>
 Range: Touch<BR>
@@ -236,7 +235,7 @@ As an action, you can touch a creature and draw power from the pool to restore a
 Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.<BR>
 This feature has no effect on undead and constructs.</p></div>
 
-<button type="button" class="collapsible collapsible-inv">Divine Sense</button>
+<button type="button" class="collapsible collapsible-class">Divine Sense</button>
 <div class="content">
   <p>Casting Time: 1 action<BR>
 Range: 60 feet<BR>
@@ -245,7 +244,7 @@ The presence of strong evil registers on your senses like a noxious odor, and po
 <BR><BR>
 You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p></div>
 
-<button type="button" class="collapsible collapsible-inv">Channel Divinity</button>
+<button type="button" class="collapsible collapsible-class">Channel Divinity</button>
 <div class="content">
   <p>Casting Time: 1 action<BR>
 Uses: 1 per short rest<BR>
