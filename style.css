@@ -1,4 +1,4 @@
-.collapsible {
+.spell {
   background-color: #d7b9d5;
   color: white;
   cursor: pointer;
@@ -27,10 +27,11 @@
 .active, .collapsible:hover, .collapsible3:hover, .collapsible2:hover {
   background-color: #607287;}
 
-.collapsible-inv{background-color: #ada7c9;}
-.collapsible-ritual{background-color: #90a8c3;}
-.collapsible-spells{background-color: #64a6bd;}
-.collapsible-misc{background-color: #f4cae0;}
+.spell-cantrip{background-color: #d7b9d5;}
+.spell-inv{background-color: #ada7c9;}
+.spell-ritual{background-color: #90a8c3;}
+.spell-spells{background-color: #64a6bd;}
+.spell-misc{background-color: #f4cae0;}
 
 .content {
   padding: 0 18px;
