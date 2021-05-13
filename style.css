@@ -16,21 +16,23 @@
 .spell-ritual{background-color: #90a8c3;}
 .spell-spells{background-color: #64a6bd;}
 .spell-misc{background-color: #f4cae0;}
+.spell-prep{background-color: #a8dadc;}
+.spell-noprep{background-color:#457b9d;}
+.spell-class{background-color: #1d3557;}
 
 .nav {
   background-color: #5D6D7E;
   color: white;
   cursor: pointer;
   padding: 14px;
-  width: 30%;
+
   border: none;
   text-align: left;
   outline: none;
-  padding-right: 20px;
-  font-size: 18px;
+  padding-right: 20px;  font-size: 18px;
 }
 
-.nav-pem {background-color: #5D6D7E;}
+.nav-pem {background-color: #5D6D7E; padding-right: 14px; width: 30%;}
 .nav-soj {background-color: #e63946;padding-right: 10px;width: 22%;}
 
 .active, .collapsible:hover, .collapsible3:hover, .collapsible2:hover {background-color: #607287;}
