@@ -10,8 +10,14 @@
   padding-right: 20px;
   font-size: 18px;
 }
+#Pem#
+.spell-cantrip{background-color: #d7b9d5;}
+.spell-inv{background-color: #ada7c9;}
+.spell-ritual{background-color: #90a8c3;}
+.spell-spells{background-color: #64a6bd;}
+.spell-misc{background-color: #f4cae0;}
 
-.colla {
+.nav {
   background-color: #5D6D7E;
   color: white;
   cursor: pointer;
@@ -24,14 +30,10 @@
   font-size: 18px;
 }
 
-.active, .collapsible:hover, .collapsible3:hover, .collapsible2:hover {
-  background-color: #607287;}
+.nav-pem {background-color: #5D6D7E;}
 
-.spell-cantrip{background-color: #d7b9d5;}
-.spell-inv{background-color: #ada7c9;}
-.spell-ritual{background-color: #90a8c3;}
-.spell-spells{background-color: #64a6bd;}
-.spell-misc{background-color: #f4cae0;}
+.active, .collapsible:hover, .collapsible3:hover, .collapsible2:hover {background-color: #607287;}
+
 
 .content {
   padding: 0 18px;
