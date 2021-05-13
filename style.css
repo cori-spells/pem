@@ -35,7 +35,7 @@
 .nav-pem {background-color: #5D6D7E; padding-right: 14px; width: 30%;}
 .nav-soj {background-color: #e63946;padding-right: 10px;width: 22%;}
 
-.active, .collapsible:hover, .collapsible3:hover, .collapsible2:hover {background-color: #607287;}
+.active, .spell:hover {background-color: #607287;}
 
 
 .content {
