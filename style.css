@@ -31,6 +31,7 @@
 }
 
 .nav-pem {background-color: #5D6D7E;}
+.nav-soj {background-color: #e63946;padding-right: 10px;width: 22%;}
 
 .active, .collapsible:hover, .collapsible3:hover, .collapsible2:hover {background-color: #607287;}
 
