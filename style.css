@@ -10,13 +10,14 @@
   padding-right: 20px;
   font-size: 18px;
 }
-#Pem#
+/*Pem*/
 .spell-cantrip{background-color: #d7b9d5;}
 .spell-inv{background-color: #ada7c9;}
 .spell-ritual{background-color: #90a8c3;}
 .spell-spells{background-color: #64a6bd;}
 .spell-misc{background-color: #f4cae0;}
 
+/*Soj*/
 .spell-prep{background-color: #a8dadc;}
 .spell-noprep{background-color:#457b9d;}
 .spell-class{background-color: #1d3557;}
