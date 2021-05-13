@@ -21,11 +21,9 @@
 .spell-class{background-color: #1d3557;}
 
 .nav {
-  background-color: #5D6D7E;
   color: white;
   cursor: pointer;
   padding: 14px;
-
   border: none;
   text-align: left;
   outline: none;
@@ -82,9 +80,13 @@
   padding-left: 10px;}
 
 
-.left {
+.left-pem {
   left: 0;
   background-color: #DCDCDC;}
+
+.left-soj{
+  left: 0;
+  background-color: #f1faee;}
 
 .right {
   right: 0;
