@@ -22,6 +22,10 @@
 .spell-noprep{background-color:#457b9d;}
 .spell-class{background-color: #1d3557;}
 
+.pin{background-color: white;}
+.spell-all{background-color: #d7b9d5;}
+.name{display: none;}
+
 .nav {
   color: white;
   cursor: pointer;
@@ -115,3 +119,24 @@ mark.blue {color: blue; background-color: #f1f1f1;}
 }
 
 a.all{color:white;}
+
+.control-me::after {
+    content: "yes";
+    font-size: 100px;
+}
+#toggle:checked ~ .control-me::after {
+    content: "no";
+}
+
+label {
+    background: #A5D6A7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+    
+    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
