@@ -11,14 +11,6 @@
   font-size: 18px;
 }
 
-/*Soj*/
-.spell-prep{background-color: #a8dadc;}
-.spell-noprep{background-color:#457b9d;}
-.spell-class{background-color: #1d3557;}
-
-.pin{background-color: white;}
-.spell-all{background-color: #d7b9d5;}
-.name{display: none;}
 
 .nav {
   color: white;
@@ -31,7 +23,6 @@
 }
 
 
-.nav-soj {background-color: #e63946;padding-right: 10px;width: 22%;}
 
 .active, .spell:hover {background-color: #607287;}
 
@@ -90,6 +81,12 @@
   left: 0;
   background-color: #DCDCDC;}
 
+
+/*Soj*/
+.spell-prep{background-color: #a8dadc;}
+.spell-noprep{background-color:#457b9d;}
+.spell-class{background-color: #1d3557;}
+.nav-soj {background-color: #e63946;padding-right: 10px;width: 22%;}
 .left-soj{
   left: 0;
   background-color: #f1faee;}
@@ -98,6 +95,12 @@
   right: 0;
   background-color: white;}
 
+
+/* All Spells */
+
+.pin{background-color: white;}
+.spell-all{background-color: #d7b9d5;}
+.name{display: none;}
 mark.blue {color: blue; background-color: #f1f1f1;}
 
 #myInput {
