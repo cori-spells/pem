@@ -46,7 +46,6 @@ function myFunction() {
 }
 
 function myFunction2(name) {
-  var x = document.getElementsByClassName("name");
   if (document.getElementById(name).style.display === "block") {
     document.getElementById(name).style.display = "none";
   } else {
@@ -71,10 +70,6 @@ function Export() {
 }
 
 
-$(document).ready(function() {
-
-  var url = location.href;
-  // document.body.innerHTML += 'Web address: ' + url;
-
-  if (url.search('CM') >= 0) $('.CM').show();
-});
+function clear() {
+    document.getElementsByClassName('name')[0].style.display = 'none';
+}
