@@ -30,6 +30,7 @@ function myFunction() {
   filter = input.value.toUpperCase();
   ul = document.getElementById("myUL");
   li = ul.getElementsByClassName('spell spell-all');
+  con = ul.getElementsByClassName('content');
 
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
@@ -39,6 +40,7 @@ function myFunction() {
       li[i].style.display = "";
     } else {
       li[i].style.display = "none";
+      con[i].style.display = "none";
     }
   }
 }
