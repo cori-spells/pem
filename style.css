@@ -117,10 +117,5 @@ a.all{color:white;}
   margin-bottom: 12px; /* Add some space below the input */
 }
 
-#myUL {
-  /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+#myUL {}
 
