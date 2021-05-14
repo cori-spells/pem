@@ -70,7 +70,17 @@ function Export() {
 }
 
 function Clear(){
-    var divsToHide = document.getElementsByClassName("name"); //divsToHide is an array
+    var divsToHide = document.getElementsByClassName("name"); 
     for(var i = 0; i < divsToHide.length; i++){
-        divsToHide[i].style.display = "none"; // depending on what you're doing
+        divsToHide[i].style.display = "none"; 
     }}
+
+
+function Save(){
+  var list = document.getElementsbyClassName("name");
+  var i, save;
+  for(var i = 0; i < list.length; i++){
+    if(list[0].style.display === "block") { save.append(list[0]);}}
+  save.select();
+  alert("Copied the text: " + save.value);
+}
