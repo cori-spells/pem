@@ -45,11 +45,11 @@ function myFunction() {
   }
 }
 
-function myFunction2(name) {
-  if (document.getElementById(name).style.display === "block") {
-    document.getElementById(name).style.display = "none";
+function myFunction2(spellname) {
+  if (document.getElementById(spellname).style.display === "block") {
+    document.getElementById(spellname).style.display = "none";
   } else {
-    document.getElementById(name).style.display = "block";
+    document.getElementById(spellname).style.display = "block";
   }
 }
 
@@ -69,7 +69,8 @@ function Export() {
   alert("Copied the text: " + copyText.value);
 }
 
-
-function clear() {
-    document.getElementsByClassName('name')[0].style.display = 'none';
-}
+function Clear(){
+    var divsToHide = document.getElementsByClassName("name"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }}
