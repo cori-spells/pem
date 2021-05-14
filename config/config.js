@@ -53,3 +53,28 @@ function myFunction2(name) {
     document.getElementById(name).style.display = "block";
   }
 }
+
+
+function Export() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+
+
+$(document).ready(function() {
+
+  var url = location.href;
+  // document.body.innerHTML += 'Web address: ' + url;
+
+  if (url.search('CM') >= 0) $('.CM').show();
+});
