@@ -10,12 +10,6 @@
   padding-right: 20px;
   font-size: 18px;
 }
-/*Pem*/
-.spell-cantrip{background-color: #d7b9d5;}
-.spell-inv{background-color: #ada7c9;}
-.spell-ritual{background-color: #90a8c3;}
-.spell-spells{background-color: #64a6bd;}
-.spell-misc{background-color: #f4cae0;}
 
 /*Soj*/
 .spell-prep{background-color: #a8dadc;}
@@ -36,7 +30,7 @@
   padding-right: 20px;  font-size: 18px;
 }
 
-.nav-pem {background-color: #5D6D7E; padding-right: 14px; width: 30%;}
+
 .nav-soj {background-color: #e63946;padding-right: 10px;width: 22%;}
 
 .active, .spell:hover {background-color: #607287;}
@@ -85,7 +79,13 @@
   padding-top: 20px;
   padding-left: 10px;}
 
-
+/*Pem*/
+.spell-cantrip{background-color: #d7b9d5;}
+.spell-inv{background-color: #ada7c9;}
+.spell-ritual{background-color: #90a8c3;}
+.spell-spells{background-color: #64a6bd;}
+.spell-misc{background-color: #f4cae0;}
+.nav-pem {background-color: #5D6D7E; padding-right: 14px; width: 30%;}
 .left-pem {
   left: 0;
   background-color: #DCDCDC;}
