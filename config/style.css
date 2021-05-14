@@ -70,6 +70,11 @@
   padding-top: 20px;
   padding-left: 10px;}
 
+.right {
+  right: 0;
+  background-color: white;}
+
+
 /*Pem*/
 .spell-cantrip{background-color: #d7b9d5;}
 .spell-inv{background-color: #ada7c9;}
@@ -91,55 +96,29 @@
   left: 0;
   background-color: #f1faee;}
 
-.right {
-  right: 0;
-  background-color: white;}
 
 
 /* All Spells */
 
 .pin{background-color: white;}
-.spell-all{background-color: #d7b9d5;}
+.spell-all{background-color: #022b3a; border: 0px;}
 .name{display: none;}
-mark.blue {color: blue; background-color: #f1f1f1;}
+mark.blue {color: #1f7a8c; background-color: #f1f1f1;}
+a.all{color:white;pointer-events: none;cursor: default;text-decoration: none;}
+.left-all{
+   left: 0;
+   background-color: #bfdbf7;}
+.right-all{right:0; background-color: #a1c181;}
 
 #myInput {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-color: #e1e5f2; /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 100%; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
 }
 
-#myUL {
-  /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+#myUL {}
 
-a.all{color:white;}
-
-.control-me::after {
-    content: "yes";
-    font-size: 100px;
-}
-#toggle:checked ~ .control-me::after {
-    content: "no";
-}
-
-label {
-    background: #A5D6A7;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-}
-
-.visually-hidden {
-    position: absolute;
-    left: -100vw;
-    
-    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
-}
