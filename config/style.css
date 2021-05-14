@@ -110,6 +110,7 @@ a.all{color:white;pointer-events: none;cursor: default;text-decoration: none;}
    background-color: #1f7a8c;}
 .right-all{right:0; background-color:#e1e5f2;}
 
+
 #myInput {
   background-color: #e1e5f2; /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
