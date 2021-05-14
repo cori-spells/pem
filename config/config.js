@@ -45,9 +45,9 @@ function myFunction() {
 
 function myFunction2(name) {
   var x = document.getElementsByClassName("name");
-  if (document.getElementById(name).style.display === "none") {
-    document.getElementById(name).style.display = "block";
-  } else {
+  if (document.getElementById(name).style.display === "block") {
     document.getElementById(name).style.display = "none";
+  } else {
+    document.getElementById(name).style.display = "block";
   }
 }
