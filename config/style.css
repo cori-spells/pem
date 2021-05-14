@@ -108,7 +108,7 @@ a.all{color:white;pointer-events: none;cursor: default;text-decoration: none;}
 .left-all{
    left: 0;
    background-color: #bfdbf7;}
-.right-all{right:0; background-color: #a1c181;}
+.right-all{right:0;}
 
 #myInput {
   background-color: #e1e5f2; /* Add a search icon to input */
