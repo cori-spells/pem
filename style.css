@@ -84,6 +84,7 @@
   background-color: #DCDCDC;}
 .nav-pem {background-color: #5D6D7E; padding-right: 14px; width: 30%;}
 
+
 /*Soj*/
 .spell-prep{background-color: #a8dadc;}
 .spell-noprep{background-color:#457b9d;}
@@ -92,6 +93,7 @@
   left: 0;
   background-color: #f1faee;}
 .nav-soj {background-color: #e63946;padding-right: 10px;width: 22%;}
+
 
 /* All Spells */
 mark.blue {color: blue; background-color: #f1f1f1;}
