@@ -104,6 +104,8 @@ a.all{color:white;}
 .left-all{
   left: 0;
   background-color: #f1faee;}
+
+
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
