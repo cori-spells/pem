@@ -62,9 +62,3 @@ function Clear(){
     }}
 
 
-function Save(){
-  document.getElementbyId("myInput").value="save";
-}
-
-
-
