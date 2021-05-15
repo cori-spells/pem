@@ -100,7 +100,8 @@
 
 /* All Spells */
 
-.pin{background-color: white;}
+.pin{background-color: white; padding:3px 10px; margin: 10px;}
+.pin:after{background-color: black;}
 .spell-all{background-color: #022b3a; border: 1px solid #1f7a8c; outline: 0px;}
 .name{display: none;}
 
