@@ -54,20 +54,14 @@ function myFunction2(spellname) {
 }
 
 
-function Export() {
-  /* Get the text field */
-  var copyText = document.getElementById("myInput");
-
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
-}
+function Export(){ 
+  var clip = new Clipboard('.btn');
+  clip.on("success", function() {
+    document.body.insertAdjacentHTML('beforeend', '<div>that worked.</div>');
+});
+  clip.on("error", function() {
+   document.body.insertAdjacentHTML('beforeend', '<div>that didn\'t work.</div>');
+});
 
 function Clear(){
     var divsToHide = document.getElementsByClassName("name"); 
@@ -78,9 +72,13 @@ function Clear(){
 
 function Save(){
   var list = document.getElementsbyClassName("name");
-  var i, save;
+  var i;
+  var save = ["test"];
   for(var i = 0; i < list.length; i++){
-    if(list[0].style.display === "block") { save.append(list[0]);}}
+    if(list[i].style.display === "block") { save.push(list[i]);}}
   save.select();
   alert("Copied the text: " + save.value);
 }
+
+
+
