@@ -98,13 +98,13 @@
 /* All Spells */
 mark.blue {color: blue; background-color: #f1f1f1;}
 .pin{background-color: white;}
+.nav-x {background-color: #e63946;padding-right: 10px;width: 22%;}
 .spell-all{background-color: white;}
 .name{display: none;}
 a.all{color:white;}
 .left-all{
   left: 0;
   background-color: #f1faee;}
-
 
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
