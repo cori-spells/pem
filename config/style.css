@@ -99,25 +99,24 @@
 
 
 /* All Spells */
-
-.pin{background-color: white; padding:3px 10px; margin: 10px;}
+.pin{background-color: white; padding:3px 10px;}
 .pin:after{background-color: black;}
 .spell-all{background-color: #022b3a; border: 1px solid #1f7a8c; outline: 0px;}
 .name{display: none;}
-
 mark.blue {color: #1f7a8c; background-color: #f1f1f1;}
 a.all{color:white;pointer-events: none;cursor: default;text-decoration: none;}
+.nav-x {background-color: #e63946;padding-right: 10px;width: 48%; text-align:center;}
 .left-all{
    left: 0;
    background-color: #1f7a8c;}
 .right-all{right:0; background-color:#e1e5f2;}
+.righty{text-align:right;}
 
 
 #myInput {
-  background-color: #e1e5f2; /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
+  width: 93%; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   margin-bottom: 12px; /* Add some space below the input */
