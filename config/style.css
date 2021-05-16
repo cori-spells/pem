@@ -101,7 +101,7 @@
 /* All Spells */
 .pin{background-color: white; padding:3px 10px;}
 .pin:after{background-color: black;}
-.spell-all{background-color: #022b3a; border: 1px solid #1f7a8c; outline: 0px;}
+.spell-all{background-color: #022b3a; border: 1px solid #1f7a8c; outline: 0px; position:relative;}
 .name{display: none;}
 mark.blue {color: #1f7a8c; background-color: #f1f1f1;}
 a.all{color:white;pointer-events: none;cursor: default;text-decoration: none;}
