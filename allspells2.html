@@ -546,13 +546,17 @@
 <button type="button" class="spell spell-all" id="WS2"><a href="" class="all">Wrathful Smite</button></a><div class="content"><button class="pin" onclick="myFunction2('WS')">Pin</button><BR><BR>The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell.</p><mark class="blue">Range</mark>:Self<BR><mark class="blue">Duration</mark>:Concentration, up to 1 minute<BR><mark class="blue">Casting Time</mark>:1 bonus action<BR><mark class="blue">Level</mark>: 1<BR><mark class="blue">School</mark>: Evocation<BR><mark class="blue">Class Desc</mark>:Paladin<BR><mark class="blue">Component Desc</mark>: V<BR><mark class="blue">Source</mark>:PHB, page 289<br><BR></div>
 <button type="button" class="spell spell-all" id="ZOT2"><a href="" class="all">Zone of Truth</button></a><div class="content"><button class="pin" onclick="myFunction2('ZOT')">Pin</button><BR><BR>You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.</p><p>An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.</p><mark class="blue">Range</mark>:60 feet<BR><mark class="blue">Duration</mark>:10 minutes<BR><mark class="blue">Casting Time</mark>:1 action<BR><mark class="blue">Level</mark>: 2<BR><mark class="blue">School</mark>: Enchantment<BR><mark class="blue">Class</mark>:Bard"Cleric, Paladin<BR>, Paladin_oath":["Devotion<BR><mark class="blue">Class Desc</mark>:Bard, Cleric, Paladin, Paladin: Devotion<BR><mark class="blue">Component Desc</mark>: V, S<BR><mark class="blue">Source</mark>:PHB, page 289</div></div></div></div></div>
 
-
+	
 <div class="split2 right-all">
 
-<button class="pin" onclick="Clear()">Un-pin all</button>
+<button type="button" class="nav nav-x" onclick="openCity('Main')">Spell Info</button>
+<button type="button" class="nav nav-x" onclick="openCity('Items')">Items</button>
 
-	
+
+	 
 <BR><BR>
+<div id="Main" class="city">
+<button class="pin" onclick="Clear()">Un-pin all</button><BR>
 To do: make pretty colors, finish the rest of the links, re-arrange info, make export function<BR><BR>
 <p id="ADHW" class="name"><a href="#ADHW2">Abi-Dalzim's Horrid Wilting</a></p>
 <p id="AE" class="name"><a href="#AE2">Absorb Elements</a></p>
@@ -853,6 +857,18 @@ To do: make pretty colors, finish the rest of the links, re-arrange info, make e
 <p id="WoR" class="name"><a href="#WoR2">Word of Recall</a></p>
 <p id="WS" class="name"><a href="#WS2">Wrathful Smite</a></p>
 <p id="ZOT" class="name"><a href="#ZOT2">Zone of Truth</a></p>
+</div>
+
+<div id="Items" class="city" style="display:none">
+Boop</div>
+
+
+
+
+
+
+
+
 </div>
 
 <script src="config/config.js"></script>
