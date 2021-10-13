@@ -121,13 +121,15 @@ a.all{color:white;pointer-events: none;cursor: default;text-decoration: none;}
  color: #e5e5e5;}
 .nav-pyr {background-color: grey; width: 99%;}
 .nav-pyr:hover {background-color: #fca311; width: 70%;}
+.nav-pyr2 {background-color: #fca311; width: 70%;}
+.nav-pyr2:hover {background-color: grey; width: 70%;}
 .left-pyr {
   left: 0;
   background-color: black;}
 .right-pyr {
   right: 0;
   background-color: #14213d;}
-.nav-z {background-color: #5D6D7E; padding-right: 14px; width: 49%;}
+.nav-z {background-color: #5D6D7E; padding-right: 14px; width: 32%;}
 .h3h3 {padding-left:10px; font-size: 16pt; font-weight: lighter;}
 .link-pyr, .link-pyr:visited {color:#e5e5e5;}
 
