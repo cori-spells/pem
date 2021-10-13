@@ -10,7 +10,7 @@
 
 
 <div class="split left-pyr"><div class="split3 left-pyr">
-<div class="classes" id="art" hidden><p class="h3h3">Artificer  <input onkeyup = myFun(this) size="1" type="text" value=""></p>
+<div class="classes" id="art" hidden><p class="h3h3">Artificer   <input onkeyup = myFun(this) size="1" type="text" value=""></p>
 <p id="artSlots" style="padding-left:10px"></p>
 <p id="artInf" style="padding-left:10px"></p></div>
 <div class="classes" id="barb" hidden><p class="h3h3">Barbarian  <input onkeyup = myBarb(this) size="1" type="text" value=""></p>
@@ -44,7 +44,8 @@
 
 
 <div class="split2 right-pyr">
-  <button type="button" class="nav nav-z" onclick="openCity('Main')">Spells</button>
+  <button type="button" class="nav nav-z" onclick="openCity('Main')">Add</button>
+  <button type="button" class="nav nav-z" onclick="openCity('Clear')">Remove</button>
   <button type="button" class="nav nav-z" onclick="openCity('Tokyo')">Links</button>
 
 
@@ -63,6 +64,24 @@
 <button type="button" class="nav nav-pyr" onclick="addClass('warl')">Add Warlock</button><BR>
 <button type="button" class="nav nav-pyr" onclick="addClass('wiz')">Add Wizard</button>
 </div>
+
+<div id="Clear" class="city" style="display:none"><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('art')">Remove Artificer</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('barb')">Remove Barbarian</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('bard')">Remove Bard</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('cleric')">Remove Cleric</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('druid')">Remove Druid</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('fighter')">Remove Fighter</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('monk')">Remove Monk</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('pal')">Remove Paladin</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('ranger')">Remove Ranger</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('rogue')">Remove Rogue</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('sorc')">Remove Sorcerer</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('warl')">Remove Warlock</button><BR>
+<button type="button" class="nav nav-pyr2" onclick="removeClass('wiz')">Remove Wizard</button>
+</div>
+
+
 
 
 
