@@ -10,18 +10,23 @@
 
 
 <div class="split left-pem"><div class="split3 left-pem">
-<div id="art" hidden>Hello</div>
-<div id="barb">Hello2</div>
-<div id="bard">Hello3</div>
-<div id="cleric" hidden>Hello4</div>
-<div id="druid">Hello5</div>
-<div id="fighter">Hello6</div>
-<div id="monk">Hello7</div>
-<div id="pal">Hello8</div>
-<div id="ranger">Hello9</div>
-<div id="sorc">Hello10</div>
-<div id="warl">Hello11</div>
-<div id="wiz">Hello12</div>
+<div id="art" hidden><h3>Artificer</h3>
+<input onkeyup = myFun(this) size="5" type="text" value="">
+<p id="artSlots"></p>
+<p id="artInf"></p></div>
+
+
+<div id="barb" hidden><h3>Barbarian</h3></div>
+<div id="bard" hidden><h3>Bard</h3></div>
+<div id="cleric" hidden><h3>Cleric</h3></div>
+<div id="druid" hidden><h3>Druid</h3></div>
+<div id="fighter" hidden><h3>Fighter</h3></div>
+<div id="monk" hidden><h3>Monk</h3></div>
+<div id="pal" hidden><h3>Paladin</h3></div>
+<div id="ranger" hidden><h3>Ranger</h3></div>
+<div id="sorc" hidden><h3>Sorcerer</h3></div>
+<div id="warl" hidden><h3>Warlock</h3></div>
+<div id="wiz" hidden><h3>Wizard</h3></div>
 
 </div></div>
 
@@ -38,10 +43,10 @@
 <button type="button" class="nav nav-pem" onclick="addClass('barb')">Add Barbarian</button>
 <button type="button" class="nav nav-pem" onclick="addClass('bard')">Add Bard</button>
 <button type="button" class="nav nav-pem" onclick="addClass('cleric')">Add Cleric</button>
-<button type="button" class="nav nav-pem" onclick="addClass()">Add Druid</button>
-<button type="button" class="nav nav-pem" onclick="addClass()">Add Fighter</button>
-<button type="button" class="nav nav-pem" onclick="addClass()">Add Monk</button>
-<button type="button" class="nav nav-pem" onclick="addClass()">Add Paladin</button>
+<button type="button" class="nav nav-pem" onclick="addClass('druid')">Add Druid</button>
+<button type="button" class="nav nav-pem" onclick="addClass('fighter')">Add Fighter</button>
+<button type="button" class="nav nav-pem" onclick="addClass('monk')">Add Monk</button>
+<button type="button" class="nav nav-pem" onclick="addClass('pal')">Add Paladin</button>
 <button type="button" class="nav nav-pem" onclick="addClass('ranger')">Add Ranger</button>
 <button type="button" class="nav nav-pem" onclick="addClass('rogue')">Add Rogue</button>
 <button type="button" class="nav nav-pem" onclick="addClass('sorc')">Add Sorcerer</button>
