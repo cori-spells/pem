@@ -66,6 +66,10 @@ function addClass(cl) {
   document.getElementById(cl).style.display="block";
 }
 
+function removeClass(cl) {
+  document.getElementById(cl).style.display="none";
+}
+
 function myFun(input){
 	var elementValue = input.value;
 	if (elementValue=='1') {document.getElementById("artSlots").innerHTML = "1st level slots: <input type='radio' name='at'>0<input type='radio' name='at'>1<input type='radio' name='at' checked>2";document.getElementById("artInf").innerHTML = "Infusions known - none";}
