@@ -113,6 +113,16 @@ a.all{color:white;pointer-events: none;cursor: default;text-decoration: none;}
 .righty{text-align:right;}
 
 
+/* Players list */
+.classes{
+ background-color:white;
+ width: 70%;
+ outline: 1px solid black;
+ padding: 1px;
+ }
+.nav-pyr {background-color: black; width: 70%;}
+.nav-pyr:hover {background-color: grey; width: 70%;}
+
 #myInput {
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
