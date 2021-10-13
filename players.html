@@ -10,23 +10,35 @@
 
 
 <div class="split left-pem"><div class="split3 left-pem">
-<div id="art" hidden><h3>Artificer</h3>
-<input onkeyup = myFun(this) size="5" type="text" value="">
-<p id="artSlots"></p>
-<p id="artInf"></p></div>
-
-
-<div id="barb" hidden><h3>Barbarian</h3></div>
-<div id="bard" hidden><h3>Bard</h3></div>
-<div id="cleric" hidden><h3>Cleric</h3></div>
-<div id="druid" hidden><h3>Druid</h3></div>
-<div id="fighter" hidden><h3>Fighter</h3></div>
-<div id="monk" hidden><h3>Monk</h3></div>
-<div id="pal" hidden><h3>Paladin</h3></div>
-<div id="ranger" hidden><h3>Ranger</h3></div>
-<div id="sorc" hidden><h3>Sorcerer</h3></div>
-<div id="warl" hidden><h3>Warlock</h3></div>
-<div id="wiz" hidden><h3>Wizard</h3></div>
+<div class="classes" id="art" hidden><h3 style="padding-left:10px">Artificer  <input onkeyup = myFun(this) size="5" type="text" value=""></h3>
+<p id="artSlots" style="padding-left:10px"></p>
+<p id="artInf" style="padding-left:10px"></p></div>
+<div class="classes" id="barb" hidden> <h3 style="padding-left:10px">Barbarian  <input onkeyup = myBarb(this) size="5" type="text" value=""></h3>
+<p id="barbRage" style="padding-left:10px"></p></div>
+<div class="classes" id="bard" hidden><h3 style="padding-left:10px">Bard  <input onkeyup = myBard(this) size="5" type="text" value=""></h3>
+<p id="bardSlots" style="padding-left:10px"></p></div>
+<div class="classes" id="cleric" hidden><h3 style="padding-left:10px">Cleric  <input onkeyup = myCleric(this) size="5" type="text" value=""></h3>
+<p id="chDiv" style="padding-left:10px"></p>
+<p id="clericSlots" style="padding-left:10px"></p></div>
+<div class="classes" id="druid" hidden><h3 style="padding-left:10px">Druid  <input onkeyup = myDruid(this) size="5" type="text" value=""></h3>
+<p id="druidSlots" style="padding-left:10px"></p></div>
+<div class="classes" id="fighter" hidden><h3 style="padding-left:10px">Fighter  </h3>
+<p style="padding-left:10px">Second Wind: once per rest</p>
+<p style="padding-left:10px">Action Surge: once per rest</p></div>
+<div class="classes" id="monk" hidden><h3 style="padding-left:10px">Monk  <input onkeyup = myMonk(this) size="5" type="text" value=""></h3>
+<p id="ki" style="padding-left:10px"></p></div>
+<div class="classes" id="pal" hidden><h3 style="padding-left:10px">Paladin  <input onkeyup = myPal(this) size="5" type="text" value=""></h3>
+<p id="palSlots" style="padding-left:10px"></p></div>
+<div class="classes" id="ranger" hidden><h3 style="padding-left:10px">Ranger  <input onkeyup = myRanger(this) size="5" type="text" value=""></h3>
+<p id="rangSlots" style="padding-left:10px"></p></div>
+<div class="classes" id="rogue" hidden><h3 style="padding-left:10px">Rogue</h3>
+<p style="padding-left:10px">Nada</p></div>
+<div class="classes" id="sorc" hidden><h3 style="padding-left:10px">Sorcerer  <input onkeyup = mySorc(this) size="5" type="text" value=""></h3>
+<p id="sorcSlots" style="padding-left:10px"></p></div>
+<div class="classes" id="warl" hidden><h3 style="padding-left:10px">Warlock  <input onkeyup = myWarl(this) size="5" type="text" value=""></h3>
+<p id="warlSlots" style="padding-left:10px"></p></div>
+<div class="classes" id="wiz" hidden><h3 style="padding-left:10px">Wizard  <input onkeyup = myWiz(this) size="5" type="text" value=""></h3>
+<p id="wizSlots" style="padding-left:10px"></p></div>
 
 </div></div>
 
@@ -38,20 +50,20 @@
   <button type="button" class="nav nav-pem" onclick="openCity('Tokyo')">Links</button>
 
 
-<div id="Main" class="city">
-<button type="button" class="nav nav-pem" onclick="addClass('art')">Add Artificer</button>
-<button type="button" class="nav nav-pem" onclick="addClass('barb')">Add Barbarian</button>
-<button type="button" class="nav nav-pem" onclick="addClass('bard')">Add Bard</button>
-<button type="button" class="nav nav-pem" onclick="addClass('cleric')">Add Cleric</button>
-<button type="button" class="nav nav-pem" onclick="addClass('druid')">Add Druid</button>
-<button type="button" class="nav nav-pem" onclick="addClass('fighter')">Add Fighter</button>
-<button type="button" class="nav nav-pem" onclick="addClass('monk')">Add Monk</button>
-<button type="button" class="nav nav-pem" onclick="addClass('pal')">Add Paladin</button>
-<button type="button" class="nav nav-pem" onclick="addClass('ranger')">Add Ranger</button>
-<button type="button" class="nav nav-pem" onclick="addClass('rogue')">Add Rogue</button>
-<button type="button" class="nav nav-pem" onclick="addClass('sorc')">Add Sorcerer</button>
-<button type="button" class="nav nav-pem" onclick="addClass('warl')">Add Warlock</button>
-<button type="button" class="nav nav-pem" onclick="addClass('wiz')">Add Wizard</button>
+<div id="Main" class="city"><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('art')">Add Artificer</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('barb')">Add Barbarian</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('bard')">Add Bard</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('cleric')">Add Cleric</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('druid')">Add Druid</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('fighter')">Add Fighter</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('monk')">Add Monk</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('pal')">Add Paladin</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('ranger')">Add Ranger</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('rogue')">Add Rogue</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('sorc')">Add Sorcerer</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('warl')">Add Warlock</button><BR>
+<button type="button" class="nav nav-pyr" onclick="addClass('wiz')">Add Wizard</button>
 </div>
 
 <div id="Tress" class="city" style="display:none"><BR><BR>
@@ -64,12 +76,9 @@
 
 
 <div id="Tokyo" class="city" style="display:none">
+Links
 </div>
 
-<div id="Back" class="city" style="display:none"><BR><BR>
-</div>
-
-</div>
 
 
 
