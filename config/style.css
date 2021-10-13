@@ -115,13 +115,26 @@ a.all{color:white;pointer-events: none;cursor: default;text-decoration: none;}
 
 /* Players list */
 .classes{
- background-color:white;
+ background-color:#14213d;
  width: 70%;
  outline: 1px solid black;
  padding: 1px;
- }
-.nav-pyr {background-color: black; width: 70%;}
-.nav-pyr:hover {background-color: grey; width: 70%;}
+ color: #e5e5e5;
+ font-family: Verdana, Geneva, sans-serif;
+}
+.nav-pyr {background-color: grey; width: 70%;}
+.nav-pyr:hover {background-color: #fca311; width: 70%;}
+.left-pyr {
+  left: 0;
+  background-color: black;}
+.right-pyr {
+  right: 0;
+  background-color: #14213d;}
+.nav-z {background-color: #5D6D7E; padding-right: 14px; width: 49%;}
+
+
+
+
 
 #myInput {
   background-position: 10px 12px; /* Position the search icon */
