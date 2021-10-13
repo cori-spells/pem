@@ -66,3 +66,12 @@ function addClass(cl) {
   document.getElementById(cl).style.display="block";
 }
 
+function myFun(input){
+	var elementValue = input.value;
+	if (elementValue=='1') {document.getElementById("artSlots").innerHTML = "Spell Slots:2 first level";document.getElementById("artInf").innerHTML = "Infusions known - none";}
+	else if (elementValue=='2') {document.getElementById("artSlots").innerHTML = "Spell Slots:2 first level";document.getElementById("artInf").innerHTML = "Infusions known: 4, Infused Items: 2";}
+	else if (elementValue=='3' || elementValue=='4') {document.getElementById("artSlots").innerHTML = "Spell Slots: 3 first level";document.getElementById("artInf").innerHTML = "Infusions known: 4, Infused Items: 2";}
+	else if (elementValue=='5') {document.getElementById("artSlots").innerHTML = "Spell Slots: 4 first level, 2 second";document.getElementById("artInf").innerHTML = "Infusions known: 4, Infused Items: 2";}
+	else if (elementValue=='6') {document.getElementById("artSlots").innerHTML = "Spell Slots: 4 first level, 2 second";document.getElementById("artInf").innerHTML = "Infusions known: 6, Infused Items: 3";}
+	else {document.getElementById("artSlots").innerHTML = "Please pick a number 1-6";}
+}
