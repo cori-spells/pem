@@ -62,11 +62,7 @@ function Clear(){
     }}
 
 
-function addCleric() {
-  var x = document.getElementById("cleric");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+function addClass(cl) {
+  document.getElementById(cl).style.display="block";
 }
+
