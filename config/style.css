@@ -107,7 +107,8 @@
 .right-row {
   right: 0;
   background-color: #1b2a41;
-  color: white;}
+  color: white;
+  font-family: Helvetica;}
 .spell-row1:hover, .spell-row2:hover {background-color: #324a5f;}
 
 
