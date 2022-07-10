@@ -97,19 +97,19 @@
   background-color: #f1faee;}
 
 /*Rowan*/
-.spell-row1{background-color: #1b2a41;}
-.spell-row2{background-color:#0c1821;}
+.spell-row1{background-color: #B6A6CA;}
+.spell-row2{background-color:#A09ABC;}
 .spell-row3{background-color: #000000;}
-.nav-row {background-color: #324a5f; padding-right: 10px;width: 30%;}
+.nav-row {background-color: #645382; padding-right: 10px;width: 30%;}
 .left-row{
   left: 0;
-  background-color: #ccc9dc;}
+  background-color: #E1DEE9;}
 .right-row {
   right: 0;
-  background-color: #1b2a41;
+  background-color: #433D5C;
   color: white;
   font-family: Helvetica;}
-.spell-row1:hover, .spell-row2:hover {background-color: #324a5f;}
+.spell-row1:hover, .spell-row2:hover {background-color: #9a8c98;}
 
 
 
