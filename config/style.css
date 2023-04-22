@@ -112,6 +112,19 @@
 .spell-row1:hover, .spell-row2:hover {background-color: #9a8c98;}
 
 
+/*Eefah*/
+.spell-cantrip{background-color: #ff0054;}
+.spell-inv{background-color: #ada7c9;}
+.spell-ritual{background-color: #90a8c3;}
+.spell-spells{background-color: #64a6bd;}
+.spell-staff{background-color: #4b7d8f;}
+.spell-misc{background-color: #f4cae0;}
+.nav-pem {background-color: #5D6D7E; padding-right: 14px; width: 22%;}
+.left-pem {
+  left: 0;
+  background-color: #DCDCDC;}
+
+
 
 /* All Spells */
 .pin{background-color: white; padding:3px 10px;}
