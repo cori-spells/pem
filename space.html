@@ -8,10 +8,10 @@
 <input type="text" id="myText" value="">
 
 <button onclick="myFunction()">Submit</button>
-<p>need to do: add Kindori+Twindori and math to do the weirdness, Zardia, Coran, Myocin, Cold one?, Skin</p>
+<p>need to do: add Kindori+Twindori and math to do the weirdness, Zardia, Coran, Myocin, Cold one?, Skin; color code orbits</p>
 
 <p id="demo"></p>
-<canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;">
+<canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML canvas tag.</canvas>
 
 <script>
@@ -19,40 +19,104 @@ Your browser does not support the HTML canvas tag.</canvas>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.lineWidth=1;
+<!-- station 317 -->
 ctx.beginPath();
-ctx.arc(300,300,75,0,2*Math.PI);
+ctx.arc(400,400,60,0,2*Math.PI);
 ctx.stroke();
+<!-- kindori -->
 ctx.beginPath();
-ctx.arc(300,300,150,0,2*Math.PI);
+ctx.arc(400,400,120,0,2*Math.PI);
 ctx.stroke();
+<!-- Zardia -->
 ctx.beginPath();
-ctx.arc(300,300,5,0,2*Math.PI);
+ctx.arc(400,400,180,0,2*Math.PI);
+ctx.stroke();
+<!-- Twindori -->
+ctx.beginPath();
+ctx.arc(400,400,240,0,2*Math.PI);
+ctx.stroke();
+<!-- Coran -->
+ctx.beginPath();
+ctx.arc(400,400,300,0,2*Math.PI);
+ctx.stroke();
+<!-- Myocin -->
+ctx.beginPath();
+ctx.arc(400,400,360,0,2*Math.PI);
+ctx.stroke();
+<!-- tSoS -->
+ctx.beginPath();
+ctx.arc(400,400,390,0,2*Math.PI);
+ctx.stroke();
+
+ctx.lineWidth=10;
+ctx.strokeStyle="purple";
+ctx.beginPath();
+ctx.arc(400,400,390,((Math.PI/180)*127),((Math.PI/180)*127)-6.25);
+ctx.stroke();
+
+ctx.strokeStyle="black";
+ctx.lineWidth=1;
+<!-- Midori -->
+ctx.beginPath();
+ctx.arc(400,400,5,0,2*Math.PI);
 ctx.fillStyle="green";
 ctx.fill();
 
 function myFunction() {
   var x = document.getElementById("myText").value;
   var c = document.getElementById("myCanvas");
-	var ctx = c.getContext("2d");
+  var sttnSpd= (x*0.2*Math.PI)
+  var ctx = c.getContext("2d");
     ctx.lineWidth=10;
     ctx.strokeStyle="red";
-    ctx.clearRect(0,0,600,600)
+    ctx.clearRect(0,0,800,800)
 	ctx.beginPath();
-    ctx.arc(300,300,75,x*0.2*Math.PI,((x*0.2*Math.PI)-6.15));
+    ctx.arc(400,400,60,sttnSpd,(sttnSpd-6.15));
 ctx.stroke();
 ctx.strokeStyle="black";
 ctx.lineWidth=1;
+<!-- station 317 -->
 ctx.beginPath();
-ctx.arc(300,300,75,0,2*Math.PI);
+ctx.arc(400,400,60,0,2*Math.PI);
 ctx.stroke();
+<!-- kindori -->
 ctx.beginPath();
-ctx.arc(300,300,150,0,2*Math.PI);
+ctx.arc(400,400,120,0,2*Math.PI);
 ctx.stroke();
+<!-- Zardia -->
 ctx.beginPath();
-ctx.arc(300,300,5,0,2*Math.PI);
+ctx.arc(400,400,180,0,2*Math.PI);
+ctx.stroke();
+<!-- Twindori -->
+ctx.beginPath();
+ctx.arc(400,400,240,0,2*Math.PI);
+ctx.stroke();
+<!-- Coran -->
+ctx.beginPath();
+ctx.arc(400,400,300,0,2*Math.PI);
+ctx.stroke();
+<!-- Myocin -->
+ctx.beginPath();
+ctx.arc(400,400,360,0,2*Math.PI);
+ctx.stroke();
+<!-- tSoS -->
+ctx.beginPath();
+ctx.arc(400,400,390,0,2*Math.PI);
+ctx.stroke();
+
+ctx.lineWidth=10;
+ctx.strokeStyle="purple";
+ctx.beginPath();
+ctx.arc(400,400,390,((Math.PI/180)*127),((Math.PI/180)*127)-6.25);
+ctx.stroke();
+
+ctx.strokeStyle="black";
+ctx.lineWidth=1;
+<!-- Midori -->
+ctx.beginPath();
+ctx.arc(400,400,5,0,2*Math.PI);
 ctx.fillStyle="green";
 ctx.fill();
-
 
 }
 
