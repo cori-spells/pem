@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Text Input</h2>
+
+<p>Enter some text in the text field, and then press the button:</p>
+
+<input type="text" id="myText" value="">
+
+<button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+<canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+    ctx.lineWidth=10;
+    ctx.clearRect(0,0,600,600)
+	ctx.beginPath();
+    ctx.arc(300,300,100,x,2*Math.PI);
+ctx.stroke();
+ctx.lineWidth=1;
+ctx.beginPath();
+ctx.arc(300,300,100,0,2*Math.PI);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(300,300,200,0,2*Math.PI);
+ctx.stroke();
+
+
+ctx.beginPath();
+ctx.arc(300,300,100,100,2*Math.PI);
+ctx.stroke();
+}
+
+
+
+
+
+</script> 
+
+</body>
+
+</html>
