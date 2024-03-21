@@ -12,7 +12,7 @@
 <canvas id="myCanvas" width="850" height="850" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML canvas tag.</canvas>
 </center>
-<p>need to do: add Kindori+Twindori and math to do the weirdness, Zardia, Coran, Myocin, Cold one?; color code orbits</p>
+<p>need to do: add  Zardia, Coran, Myocin, Cold one?; color code orbits</p>
 <script>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
@@ -27,7 +27,7 @@ ctx.arc(425,425,60,0,2*Math.PI);
 ctx.stroke();
 <!-- kindori -->
 ctx.beginPath();
-ctx.arc(425,425,120,0,2*Math.PI);
+ctx.arc(425,425,120,1*Math.PI,2*Math.PI);
 ctx.stroke();
 <!-- Zardia -->
 ctx.beginPath();
@@ -35,7 +35,7 @@ ctx.arc(425,425,180,0,2*Math.PI);
 ctx.stroke();
 <!-- Twindori -->
 ctx.beginPath();
-ctx.arc(425,425,240,0,2*Math.PI);
+ctx.arc(425,425,240,2*Math.PI,1*Math.PI);
 ctx.stroke();
 <!-- Coran -->
 ctx.beginPath();
@@ -49,11 +49,9 @@ ctx.stroke();
 ctx.lineWidth=10;
 ctx.strokeStyle="purple";
 ctx.beginPath();
-ctx.arc(425,425,450,((Math.PI/180)*127),((Math.PI/180)*127)-6.25);
+ctx.arc(425,425,450,((Math.PI/180)*127),((Math.PI/180)*127)-6.265);
 ctx.stroke();
 
-ctx.strokeStyle="black";
-ctx.lineWidth=1;
 <!-- Midori -->
 ctx.beginPath();
 ctx.arc(425,425,5,0,2*Math.PI);
@@ -64,36 +62,37 @@ function myFunction() {
   var x = document.getElementById("myText").value;
   var c = document.getElementById("myCanvas");
   var sttnSpd= (x*0.2*Math.PI)
+  var KinSpd=(x*0.1*Math.PI)
+  var ZarSpd=(x*(1/15)*Math.PI)
+  var TwinSpd=(x*(1/20)*Math.PI)
+  var wobbler=KinSpd%(2*Math.PI);
+  var CoranSpd=(x*(1/25)*Math.PI)
+  var MyoSpd=(x*(1/35)*Math.PI)
   var ctx = c.getContext("2d");
-    ctx.lineWidth=10;
-    ctx.strokeStyle="red";
-    ctx.clearRect(0,0,850,850)
-	ctx.beginPath();
-    ctx.arc(425,425,60,sttnSpd,(sttnSpd-6.15));
-ctx.stroke();
+  ctx.clearRect(0,0,850,850)
 ctx.strokeStyle="black";
 ctx.lineWidth=1;
-<!-- station 317 -->
+<!-- station 317 orbit-->
 ctx.beginPath();
 ctx.arc(425,425,60,0,2*Math.PI);
 ctx.stroke();
-<!-- kindori -->
+<!-- kindori orbit-->
 ctx.beginPath();
-ctx.arc(425,425,120,0,2*Math.PI);
+ctx.arc(425,425,120,1*Math.PI,2*Math.PI);
 ctx.stroke();
-<!-- Zardia -->
+<!-- Zardia orbit-->
 ctx.beginPath();
 ctx.arc(425,425,180,0,2*Math.PI);
 ctx.stroke();
-<!-- Twindori -->
+<!-- Twindori orbit-->
 ctx.beginPath();
-ctx.arc(425,425,240,0,2*Math.PI);
+ctx.arc(425,425,240,2*Math.PI,1*Math.PI);
 ctx.stroke();
-<!-- Coran -->
+<!-- Coran orbit-->
 ctx.beginPath();
 ctx.arc(425,425,300,0,2*Math.PI);
 ctx.stroke();
-<!-- Myocin -->
+<!-- Myocin orbit-->
 ctx.beginPath();
 ctx.arc(425,425,420,0,2*Math.PI);
 ctx.stroke();
@@ -105,16 +104,49 @@ ctx.stroke();
 ctx.lineWidth=10;
 ctx.strokeStyle="purple";
 ctx.beginPath();
-ctx.arc(425,425,450,((Math.PI/180)*127),((Math.PI/180)*127)-6.25);
+ctx.arc(425,425,450,((Math.PI/180)*127),((Math.PI/180)*127)-6.265);
 ctx.stroke();
 
-ctx.strokeStyle="black";
-ctx.lineWidth=1;
+
 <!-- Midori -->
 ctx.beginPath();
 ctx.arc(425,425,5,0,2*Math.PI);
 ctx.fillStyle="green";
 ctx.fill();
+
+<!-- station 317 -->
+  ctx.lineWidth=10;
+  ctx.strokeStyle="red";
+  ctx.beginPath();
+  ctx.arc(425,425,60,sttnSpd,(sttnSpd-6.15));
+  ctx.stroke();
+<!-- kindori -->
+  ctx.beginPath();
+  ctx.strokeStyle="orange";
+ <!-- if (wobbler<Math.PI){ ctx.strokeStyle="white";}
+  ctx.arc(425,425,120,KinSpd,(KinSpd-6.2));
+  ctx.stroke();
+<!-- Zardia -->
+  ctx.beginPath();
+  ctx.strokeStyle="yellow";
+  ctx.arc(425,425,180,ZarSpd,(ZarSpd-6.2));
+  ctx.stroke();
+<!-- Twindori -->
+  ctx.beginPath();
+  ctx.strokeStyle="orange";
+  <!--if (wobbler>Math.PI){ ctx.strokeStyle="white";}
+  ctx.arc(425,425,240,TwinSpd,(TwinSpd-6.2));
+  ctx.stroke();
+<!-- Coran -->
+  ctx.beginPath();
+  ctx.strokeStyle="green";
+  ctx.arc(425,425,300,CoranSpd,(CoranSpd-6.2));
+  ctx.stroke();
+<!-- Myocin -->
+  ctx.beginPath();
+  ctx.strokeStyle="blue";
+  ctx.arc(425,425,420,MyoSpd,(MyoSpd-6.2));
+  ctx.stroke();
 
 <!-- grid -->
 ctx.lineWidth=0.3;
