@@ -8,6 +8,7 @@
 <input type="text" id="myText" value="">
 
 <button onclick="myFunction()">Submit</button>
+<p>need to do: add Kindori+Twindori and math to do the weirdness, Zardia, Coran, Myocin, Cold one?, Skin</p>
 
 <p id="demo"></p>
 <canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;">
@@ -19,10 +20,10 @@ var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.lineWidth=1;
 ctx.beginPath();
-ctx.arc(300,300,100,0,2*Math.PI);
+ctx.arc(300,300,75,0,2*Math.PI);
 ctx.stroke();
 ctx.beginPath();
-ctx.arc(300,300,200,0,2*Math.PI);
+ctx.arc(300,300,150,0,2*Math.PI);
 ctx.stroke();
 ctx.beginPath();
 ctx.arc(300,300,5,0,2*Math.PI);
@@ -34,16 +35,18 @@ function myFunction() {
   var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
     ctx.lineWidth=10;
+    ctx.strokeStyle="red";
     ctx.clearRect(0,0,600,600)
 	ctx.beginPath();
-    ctx.arc(300,300,100,x,(x-6));
+    ctx.arc(300,300,75,x*0.2*Math.PI,((x*0.2*Math.PI)-6.15));
 ctx.stroke();
+ctx.strokeStyle="black";
 ctx.lineWidth=1;
 ctx.beginPath();
-ctx.arc(300,300,100,0,2*Math.PI);
+ctx.arc(300,300,75,0,2*Math.PI);
 ctx.stroke();
 ctx.beginPath();
-ctx.arc(300,300,200,0,2*Math.PI);
+ctx.arc(300,300,150,0,2*Math.PI);
 ctx.stroke();
 ctx.beginPath();
 ctx.arc(300,300,5,0,2*Math.PI);
