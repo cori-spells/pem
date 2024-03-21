@@ -15,9 +15,12 @@
 Your browser does not support the HTML canvas tag.</canvas>
 
 <script>
-
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
+
+
+<!-- planets -->
+ctx.strokeStyle="black";
 ctx.lineWidth=1;
 <!-- station 317 -->
 ctx.beginPath();
@@ -118,6 +121,30 @@ ctx.arc(400,400,5,0,2*Math.PI);
 ctx.fillStyle="green";
 ctx.fill();
 
+<!-- grid -->
+ctx.strokeStyle="grey";
+ctx.beginPath();
+ctx.moveTo(0,60);
+ctx.lineTo(800,60);
+ctx.moveTo(0,120);
+ctx.lineTo(800,120);
+ctx.moveTo(0,180);
+ctx.lineTo(800,180);
+ctx.moveTo(0,240);
+ctx.lineTo(800,240);
+ctx.moveTo(0,300);
+ctx.lineTo(800,300);
+ctx.moveTo(0,360);
+ctx.lineTo(800,360);
+ctx.moveTo(0,420);
+ctx.lineTo(800,420);
+ctx.moveTo(0,480);
+ctx.lineTo(800,480);
+ctx.moveTo(0,540);
+ctx.lineTo(800,540);
+ctx.moveTo(0,600);
+ctx.lineTo(800,600);
+ctx.stroke();
 }
 
 </script> 
