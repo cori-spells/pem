@@ -3,12 +3,14 @@
 input[type='number']{
     width: 40px;
 } 
+body{
+	background-image: url("https://64.media.tumblr.com/6e54704689a425096992a60a308da194/901d0d11c4e6f7ce-7a/s500x750/31028ff40f7f07703b6f9e828a8af67b0201a824.png");}
 </style>
 <html>
 <body>
-<center><h2>Space chart under construction zone</h2>
+<center><h2 style="color:white">Space Chart</h2>
 
-<p>Enter the day then press the button:
+<p style="color:white">Enter the day then press the button:
 
 <input type="number" id="myText" value="">
 
@@ -20,7 +22,8 @@ Your browser does not support the HTML canvas tag.</canvas>
 <script>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-
+ctx.fillStyle="white";
+ctx.fillRect(0, 0, 850, 850);
 <!-- planets -->
 ctx.strokeStyle="black";
 ctx.lineWidth=1;
@@ -72,7 +75,8 @@ function myFunction() {
   var CoranSpd=(x*(1/25)*Math.PI)
   var MyoSpd=(x*(1/35)*Math.PI)
   var ctx = c.getContext("2d");
-  ctx.clearRect(0,0,850,850)
+ctx.fillStyle="white";
+ctx.fillRect(0, 0, 850, 850);
 ctx.strokeStyle="black";
 ctx.lineWidth=1;
 <!-- station 317 orbit-->
