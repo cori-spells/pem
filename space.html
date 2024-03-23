@@ -32,16 +32,27 @@ ctx.beginPath();
 ctx.arc(422,422,60,0,2*Math.PI);
 ctx.stroke();
 <!-- kindori -->
+ ctx.beginPath();
+ ctx.arc(422,422,120,0,2*Math.PI);
+ ctx.stroke();
+
+ctx.strokeStyle="blue";
 ctx.beginPath();
-ctx.arc(422,422,120,1*Math.PI,2*Math.PI);
+ctx.ellipse(465, 465, 180, 90, Math.PI * 0.25, 0, Math.PI);
 ctx.stroke();
+
+ctx.beginPath();
+ctx.ellipse(465, 465, 180, 90, Math.PI * 0.25, Math.PI,0);
+ctx.stroke();
+
+ctx.strokeStyle="black";
 <!-- Zardia -->
 ctx.beginPath();
 ctx.arc(422,422,180,0,2*Math.PI);
 ctx.stroke();
 <!-- Twindori -->
-ctx.beginPath();
-ctx.arc(422,422,240,2*Math.PI,1*Math.PI);
+ ctx.beginPath();
+ ctx.arc(422,422,240,0,2*Math.PI);
 ctx.stroke();
 <!-- Coran -->
 ctx.beginPath();
@@ -64,6 +75,9 @@ ctx.arc(422,422,5,0,2*Math.PI);
 ctx.fillStyle="green";
 ctx.fill();
 
+
+
+
 function myFunction() {
   var x = document.getElementById("myText").value;
   var c = document.getElementById("myCanvas");
@@ -83,17 +97,29 @@ ctx.lineWidth=1;
 ctx.beginPath();
 ctx.arc(422,422,60,0,2*Math.PI);
 ctx.stroke();
-<!-- kindori orbit-->
+<!-- kindori -->
+ ctx.beginPath();
+ ctx.arc(422,422,120,0,2*Math.PI);
+ ctx.stroke();
+
+ctx.strokeStyle="blue";
 ctx.beginPath();
-ctx.arc(422,422,120,1*Math.PI,2*Math.PI);
+ctx.ellipse(465, 465, 180, 90, Math.PI * 0.25, 0, Math.PI);
 ctx.stroke();
+
+ctx.beginPath();
+ctx.ellipse(465, 465, 180, 90, Math.PI * 0.25, Math.PI,0);
+ctx.stroke();
+
+ctx.strokeStyle="black";
 <!-- Zardia orbit-->
 ctx.beginPath();
 ctx.arc(422,422,180,0,2*Math.PI);
 ctx.stroke();
 <!-- Twindori orbit-->
 ctx.beginPath();
-ctx.arc(422,422,240,2*Math.PI,1*Math.PI);
+
+ctx.arc(422,422,240,0,2*Math.PI);
 ctx.stroke();
 <!-- Coran orbit-->
 ctx.beginPath();
@@ -130,7 +156,6 @@ ctx.fill();
 <!-- kindori -->
   ctx.beginPath();
   ctx.strokeStyle="orange";
- <!-- if (wobbler<Math.PI){ ctx.strokeStyle="white";}
   ctx.arc(422,422,120,KinSpd,(KinSpd-6.2));
   ctx.stroke();
 <!-- Zardia -->
@@ -138,12 +163,7 @@ ctx.fill();
   ctx.strokeStyle="yellow";
   ctx.arc(422,422,180,ZarSpd,(ZarSpd-6.22));
   ctx.stroke();
-<!-- Twindori -->
-  ctx.beginPath();
-  ctx.strokeStyle="orange";
-  <!--if (wobbler>Math.PI){ ctx.strokeStyle="white";}
-  ctx.arc(422,422,240,TwinSpd,(TwinSpd-6.23));
-  ctx.stroke();
+
 <!-- Coran -->
   ctx.beginPath();
   ctx.strokeStyle="green";
