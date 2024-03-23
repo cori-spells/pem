@@ -82,7 +82,7 @@ function myFunction() {
   var KinSpd=(x*0.1*Math.PI)
   var ZarSpd=(x*(1/15)*Math.PI)
   var TwinSpd=(x*(1/20)*Math.PI)
-  var wobbler=KinSpd%(2*Math.PI);
+  var wobbler=(KinSpd+TwinSpd)/2;
   var CoranSpd=(x*(1/25)*Math.PI)
   var MyoSpd=(x*(1/35)*Math.PI)
   var ctx = c.getContext("2d");
@@ -150,8 +150,8 @@ ctx.fill();
 <!-- kindori -->
   ctx.beginPath();
   ctx.strokeStyle="orange";
-  ctx.arc(422,422,120,KinSpd,(KinSpd-6.2));
-  ctx.stroke();
+ctx.ellipse(425, 362, 180, 130, 1.5*Math.PI, wobbler,(wobbler-6.2));
+ctx.stroke();
 <!-- Zardia -->
   ctx.beginPath();
   ctx.strokeStyle="yellow";
